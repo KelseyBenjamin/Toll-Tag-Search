@@ -12,5 +12,5 @@ import org.springframework.stereotype.Component
 @Component
 class ExampleConfig {
     @Value("\${spring.example.profile}")
-    lateinit var profile: String
+    lateinit var env: String
 }

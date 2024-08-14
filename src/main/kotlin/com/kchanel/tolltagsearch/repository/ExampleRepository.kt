@@ -5,7 +5,7 @@ import com.kchanel.tolltagsearch.config.ExampleConfig
 
 @Component
 class ExampleRepository(private val config: ExampleConfig) {
-    suspend fun getProfile(): String {
-        return config.profile
+    suspend fun getEnv(): String {
+        return config.env
     }
 }

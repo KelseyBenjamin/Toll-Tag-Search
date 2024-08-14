@@ -10,9 +10,9 @@ import org.springframework.web.bind.annotation.RestController
 @RequestMapping("/example")
 class ExampleController(private val exampleRepository: ExampleRepository) {
 
-    @GetMapping("/profile")
+    @GetMapping("/env")
     suspend fun example(): String {
-        return "example using profile: " + exampleRepository.getProfile()
+        return "example using env: " + exampleRepository.getEnv()
     }
 
     @GetMapping("/demo")
